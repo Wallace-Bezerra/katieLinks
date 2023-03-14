@@ -160,6 +160,7 @@ export const ProfileInfo = styled.div`
     }
   }
   @media (max-width: 530px) {
+    padding-left: 0px;
     .top {
       gap: 10px;
       position: relative;
@@ -171,7 +172,7 @@ export const ProfileInfo = styled.div`
       img {
         position: absolute;
         margin: 0;
-        top: -39px;
+        top: -158px;
         right: 2px;
         width: 46px;
       }
