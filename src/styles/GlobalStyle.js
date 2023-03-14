@@ -12,21 +12,12 @@ export const GlobalStyle = createGlobalStyle`
   color: inherit;
 }
 body{
-  transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
-  /* background-color: ${({ theme }) => theme.bg} */
+  transition: width .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  background-color: #000;
   background-image: url(${background});
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
-  /* ::before{
-    content:"";
-    display:block;
-    background-color: #000;
-    position:absolute;
-    min-width: 100vw;
-    min-height:100vh;
-    opacity: 0.6;
-  }   */
 }
 `;

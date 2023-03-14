@@ -20,7 +20,7 @@ export const ProfileHeader = styled.div`
     top: 147px;
     left: 18px;
     img {
-      border: 5px solid ${({ theme }) => theme.textColor};
+      border: 5px solid #fee1e1;
       border-radius: 50%;
       max-width: 270px;
       width: 100%;
@@ -126,8 +126,7 @@ export const ProfileInfo = styled.div`
       font-weight: 500;
       font-size: 16px;
       line-height: 19px;
-      /* color: #fee1e1; */
-      color: ${({ theme }) => theme.textColor};
+      color: #fee1e1;
     }
   }
   .description {

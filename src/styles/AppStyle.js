@@ -10,7 +10,6 @@ export const AppStyle = styled.div`
   padding-top: 32px;
   margin-bottom: 32px;
   @media (max-width: 700px) {
-    /* max-width: 680px; */
     padding-inline: 20px;
   }
 `;
