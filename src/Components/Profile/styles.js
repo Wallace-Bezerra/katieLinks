@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const ProfileContainer = styled.div`
-  display: grid;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
   gap: 52px;
 `;
 
@@ -16,9 +16,6 @@ export const ProfileHeader = styled.div`
     border-radius: 6px;
   }
   .profileImage {
-    /* grid-row: 1/3;
-      grid-column: 2;
-      justify-self: end; */
     position: absolute;
     top: 147px;
     left: 18px;
@@ -28,22 +25,13 @@ export const ProfileHeader = styled.div`
       max-width: 270px;
       width: 100%;
     }
-    /* p {
-        margin-top: 18px;
-        max-width: 226px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 19px;
-        color: ${({ theme }) => theme.textColor};
-      } */
   }
   a {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 22px;
-    width: 255px;
-    height: 80.33px;
+    padding: 18px 32px;
     align-self: flex-end;
     background: #9146ff;
     border-radius: 9px;
@@ -62,6 +50,35 @@ export const ProfileHeader = styled.div`
       box-shadow: 0px 0px 15px 2px #9146ff;
       img {
         transform: scale(1.1);
+      }
+    }
+  }
+  @media (max-width: 650px) {
+    .profileImage {
+      img {
+        max-width: 200px;
+      }
+    }
+    a {
+      padding: 12px 30px;
+      font-size: 24px;
+      img {
+        width: 38px;
+      }
+    }
+  }
+  @media (max-width: 470px) {
+    position: initial;
+    .profileImage {
+      img {
+        max-width: 160px;
+      }
+    }
+    a {
+      padding: 6px 20px;
+      font-size: 22px;
+      img {
+        width: 32px;
       }
     }
   }
@@ -139,6 +156,32 @@ export const ProfileInfo = styled.div`
         border-radius: 50%;
         margin-left: 11px;
         box-shadow: 0px 0px 15px 2px rgba(225, 66, 116, 0.45);
+      }
+    }
+  }
+  @media (max-width: 530px) {
+    .top {
+      gap: 10px;
+      position: relative;
+      .headline {
+        p {
+          max-width: 123px;
+        }
+      }
+      img {
+        position: absolute;
+        margin: 0;
+        top: -39px;
+        right: 2px;
+        width: 46px;
+      }
+    }
+    .description {
+      P {
+        font-size: 22px;
+        img {
+          width: 33px;
+        }
       }
     }
   }

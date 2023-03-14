@@ -14,14 +14,14 @@ export const Profile = () => {
   return (
     <ProfileContainer>
       <ProfileHeader>
-        <img src={banner} alt="banner" />
-        <div className="profileImage">
-          <img src={profileImage} alt="Profile image" />
-        </div>
-        <a target="_blank" href="https://www.twitch.tv/eukatie">
-          <img src={twitch} alt="twitch icone" />
-          <span>euKatie</span>
-        </a>
+          <img src={banner} alt="banner" />
+          <div className="profileImage">
+            <img src={profileImage} alt="Profile image" />
+          </div>
+          <a target="_blank" href="https://www.twitch.tv/eukatie">
+            <img src={twitch} alt="twitch icone" />
+            <span>euKatie</span>
+          </a>
       </ProfileHeader>
       <ProfileInfo>
         <div className="top">
