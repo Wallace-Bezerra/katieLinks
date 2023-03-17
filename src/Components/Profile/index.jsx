@@ -38,7 +38,7 @@ export const Profile = () => {
             React de Filmes, Realitys, Animes e Músicas. Vem me fazer companhia{" "}
             <img src={heart} />
           </p>
-          <p className="live">Lives de Quinta à Segunda</p>
+          <p className="live">Lives de Terça à Sabado</p>
         </div>
       </ProfileInfo>
     </ProfileContainer>
